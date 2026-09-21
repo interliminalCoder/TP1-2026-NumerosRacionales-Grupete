@@ -6,19 +6,24 @@
  * NOTA: RECORDAR que todas las operaciones modifican la instancia actual.
  * r1.suma(r2) el resultado queda guardado en la instancia r1
  */
+
 public interface Racional {
+    
+
     /**
      * Operacion para suma racionales
      * Suma a la instancia actual el racional r.
      */
     public void suma(Racional r);
 
+    
     /**
      * Operacion para multiplicacion de racionales
      * Multiplica la instancia actual con el racional r.
      */
     public void mult(Racional r);
 
+    
     /**
      * Representa la resta unaria.
      * 
@@ -29,6 +34,7 @@ public interface Racional {
      */
     public void neg();
 
+    
     /**
      * Operacion para dividir racionales
      * Divide la instancia actual por el racional r
