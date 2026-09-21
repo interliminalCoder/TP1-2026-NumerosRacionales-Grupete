@@ -8,8 +8,6 @@
  */
 
 public interface Racional {
-    
-
     /**
      * Operacion para suma racionales
      * Suma a la instancia actual el racional r.
