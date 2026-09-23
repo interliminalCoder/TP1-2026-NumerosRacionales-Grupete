@@ -12,10 +12,10 @@ public class Numero implements Racional{
     public void suma(Racional r) {
         Numero otro = (Numero) r;
 
-        int nuevoNominador = this.numerador * otro.denominador + otro.numerador * this.denominador;
+        int nuevoNumerador = this.numerador * otro.denominador + otro.numerador * this.denominador;
         int nuevoDenominador = this.denominador * otro.denominador;
 
-        this.numerador = nuevoNominador;
+        this.numerador = nuevoNumerador;
         this.denominador = nuevoDenominador;
     }
 
@@ -24,7 +24,9 @@ public class Numero implements Racional{
         Numero otro = (Numero) r;
         int nuevoNumerador = this.numerador * otro.numerador;
         int nuevoDenominador = this.denominador * otro.denominador;
-        
+
+        this.numerador = nuevoNumerador;
+        this.denominador = nuevoDenominador;
     }
 
     @Override
@@ -51,4 +53,13 @@ public class Numero implements Racional{
             return true;
         }
     }
+    
+    @Override
+    public String toString() {
+        return this.numerador + "R" + this.denominador;
+    }
+
+
+
+
 }
