@@ -37,6 +37,7 @@ public class Numero implements Racional{
     @Override
     public void div(Racional r) {
         Numero otro = (Numero) r;
+        
         int nuevoNumerador = this.numerador * otro.denominador;
         int nuevoDenominador = this.denominador * otro.numerador;
 
@@ -46,12 +47,15 @@ public class Numero implements Racional{
 
     @Override
     public boolean repOk() {
-        if (this.denominador == 0) {
+
+        if (this.denominador == 0 || this.numerador == 0) {
             return false;
         }
-        else {
-            return true;
-        }
+
+
+
+        return true;
+
     }
     
     @Override
